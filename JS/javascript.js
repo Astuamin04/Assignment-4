@@ -4,8 +4,8 @@ document.getElementById('search-btn').addEventListener('click', function() {
 });
 
 function fetchMusicData(songName) {
-    let apiKey = '4490104b2b5f5b6c0b7964c2178238da'; // Replace with your Musixmatch API key
-    let proxyUrl = 'https://cors-anywhere.herokuapp.com/'; // CORS Proxy
+    let apiKey = '4490104b2b5f5b6c0b7964c2178238da'; 
+    let proxyUrl = 'https://cors-anywhere.herokuapp.com/'; 
     let apiUrl = `https://api.musixmatch.com/ws/1.1/track.search?q_track=${songName}&apikey=${apiKey}`;
     let url = proxyUrl + apiUrl;
 
